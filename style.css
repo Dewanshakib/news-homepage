@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    height: 10vh;
+    width: 100%;
+}
+ul#navlinks{
+    list-style: none;
+    color: hsl(5, 85%, 63%);
+}
+ul#navlinks li{
+    display: inline;
+    margin-right: 30px;
+}
+ul#navlinks li a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+#icon{
+    display: none;
+}
+ul#navlinks li a:hover{
+    color: hsl(5, 85%, 63%);
+
+}
+.img{
+    width: 60px;
+    height: 60px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.subcontainer-01{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+}
+.content-01{
+    width: 70%;
+    height: 65vh;
+}
+.item-01{
+    background-image: url(./images/image-web-3-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 42vh;
+}
+.item-02{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.h1{
+    width: 50%;
+}
+.btn-para{
+    width: 50%;
+}
+.h1 h1{
+    font-size: 48px;
+    letter-spacing: 0.3em;
+    font-weight: bolder;
+}
+.btn-para h3{
+    font-size: 18px;
+    font-weight: 100;
+}
+.btn-para .btn{
+    width: 155px;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    margin-top: 23px;
+}
+.btn-para .btn:hover{
+    background: hsl(240, 100%, 5%);
+}
+.content-02{
+    width: 30%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    background: hsl(240, 100%, 5%);
+}
+.content-02 h1{
+    color: hsl(35, 77%, 62%);
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    margin: 20px;
+    font-size: 45px;
+}
+.para-01{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.para-02{   
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-top: 1px solid hsl(236, 13%, 42%);
+    margin: 20px;
+}
+.para-03{   
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-top: 1px solid hsl(236, 13%, 42%);
+    margin: 20px;
+}
+.para-01 h3{
+    font-size: 18px;
+    color: hsl(36, 100%, 99%);
+}
+.para-02 h3{
+    font-size: 18px;
+    color: hsl(36, 100%, 99%);
+}
+.para-03 h3{
+    font-size: 18px;
+    color: hsl(36, 100%, 99%);
+}
+.para-01 p{
+    color: hsl(233, 8%, 79%);
+    margin-top: 12px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.para-02 p{
+    color: hsl(233, 8%, 79%);
+    margin-top: 12px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.para-03 p{
+    color: hsl(233, 8%, 79%);
+    margin-top: 12px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.subcontainer-02{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.part-01{
+    display: flex;
+}
+.part-02{
+    display: flex;
+}
+.part-03{
+    display: flex;
+}
+.info-01{
+    margin-left: 20px;
+}   
+.info-02{
+    margin-left: 20px;
+}
+.info-03{
+    margin-left: 20px;
+}
+.info-01 h2,p{
+    color: hsl(233, 8%, 79%);
+}
+.info-02 h2,p{
+    color: hsl(233, 8%, 79%);
+}
+.info-03 h2,p{
+    color: hsl(233, 8%, 79%);
+}
+.info-01 h2,h3{
+    margin-bottom: 20px;
+}
+.info-02 h2,h3{
+    margin-bottom: 20px;
+}
+.info-03 h2,h3{
+    margin-bottom: 20px;
+}
+.logo{
+    width: 120px;
+    height: 140px;
+}
+
+@media screen and (max-width: 375px) {
+
+    nav{
+        position: relative;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    ul#navlinks{
+        list-style: none;
+        position: absolute;
+        width: 85%;
+        height: 100vh;
+        top: 72px;
+        right: 0;
+        display: none;
+        background: #fff;
+    }
+    #icon{
+        display: block;
+    }
+    ul#navlinks li{
+        display: block;
+        text-align: center;
+        margin: 30px;
+        padding: 25px;
+    }
+    ul#navlinks.open{
+        display: block;
+    }
+    .subcontainer-01{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        display: block;
+        margin: 0 auto;
+    }
+    .subcontainer-02{
+        display: flex;
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        display: block;
+        margin: 0 auto;
+    }
+    .content-01{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .content-02{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        width: 100%;
+        background: hsl(240, 100%, 5%);
+    }
+    .item-01{
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+        background: url(./images/image-web-3-desktop.jpg);
+        display: block;
+        margin-top: 20px;
+    }
+    .item-02{
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-para{
+        width: 100%;
+    }
+    .btn-para .btn{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: hsl(5, 85%, 63%);
+        color: hsl(36, 100%, 99%);
+        width: 170px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .btn-para .btn:hover{
+        background: hsl(240, 100%, 5%);
+    }
+    .h1{
+        width: 100%;
+    }
+    .h1 #h1{
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+    }
+    .btn-para{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-para h3{
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    .logo{
+        width: 100px;
+        height: 130px;
+    }
+    .content-02{
+        display: flex;
+        flex-direction: column;
+        background: hsl(240, 100%, 5%);
+    }
+    .content-02 h1{
+        color: hsl(35, 77%, 62%);
+        margin-left: 40px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+    .para-01{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+    .para-02{   
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-top: 1px solid hsl(236, 13%, 42%);
+        margin: 20px;
+    }
+    .para-03{   
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-top: 1px solid hsl(236, 13%, 42%);
+        margin: 20px;
+    }
+    .para-01 h3{
+        font-size: 18px;
+        color: hsl(36, 100%, 99%);
+    }
+    .para-02 h3{
+        font-size: 18px;
+        color: hsl(36, 100%, 99%);
+    }
+    .para-03 h3{
+        font-size: 18px;
+        color: hsl(36, 100%, 99%);
+    }
+    .para-01 p{
+        color: hsl(233, 8%, 79%);
+        margin-top: 12px;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .para-02 p{
+        color: hsl(233, 8%, 79%);
+        margin-top: 12px;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .para-03 p{
+        color: hsl(233, 8%, 79%);
+        margin-top: 12px;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .part-01{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .part-02{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .part-03{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .info-01{
+        margin-left: 20px;
+    }   
+    .info-02{
+        margin-left: 20px;
+    }
+    .info-03{
+        margin-left: 20px;
+    }
+    .info-01 h2,p{
+        color: hsl(233, 8%, 79%);
+    }
+    .info-02 h2,p{
+        color: hsl(233, 8%, 79%);
+    }
+    .info-03 h2,p{
+        color: hsl(233, 8%, 79%);
+    }
+    .info-01 h2,h3{
+        margin-bottom: 10px;
+    }
+    .info-02 h2,h3{
+        margin-bottom: 10px;
+    }
+    .info-03 h2,h3{
+        margin-bottom: 10px;
+    }
+    .info-01 h2{
+        font-size: 38px;
+    }
+    .info-02 h2{
+        font-size: 38px;
+    }
+    .info-03 h2{
+        font-size: 38px;
+    }
+}
+
+
